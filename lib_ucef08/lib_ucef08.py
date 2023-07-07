@@ -7,11 +7,12 @@ def fonction1():
 
 
 def maj(commentaire):
-    os.chdir('/')  # équivalent de "cd /"
-    os.chdir(os.getcwd())  # équivalent de "cd <répertoire courant>"
-    subprocess.run(['git', 'init'])
-    subprocess.run(['git', 'add', '.'])
-    subprocess.run(['git', 'commit', '-m', commentaire])
-    subprocess.run(['git', 'push', '-u', 'origin', 'main'])
+    print("Ceci est la fonction 1 de ma bibliothèque.")
+    #os.chdir('/')  # équivalent de "cd /"
+    #os.chdir(os.getcwd())  # équivalent de "cd <répertoire courant>"
+    #subprocess.run(['git', 'init'])
+    #subprocess.run(['git', 'add', '.'])
+    #subprocess.run(['git', 'commit', '-m', commentaire])
+    #subprocess.run(['git', 'push', '-u', 'origin', 'main'])
 
 
