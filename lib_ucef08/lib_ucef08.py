@@ -1,4 +1,5 @@
 # lib_ucef08.py
+import subprocess
 import os
 
 def fonction1():
@@ -6,10 +7,11 @@ def fonction1():
 
 
 def maj(commentaire):
-    !cd /.
-    !cd os.getcwd()
-    !git init
-    !git add .
-    !git commit -m commentaire
-    !git push -u origin main
+    os.chdir('/')  # équivalent de "cd /"
+    os.chdir(os.getcwd())  # équivalent de "cd <répertoire courant>"
+    subprocess.run(['git', 'init'])
+    subprocess.run(['git', 'add', '.'])
+    subprocess.run(['git', 'commit', '-m', commentaire])
+    subprocess.run(['git', 'push', '-u', 'origin', 'main'])
+
 
